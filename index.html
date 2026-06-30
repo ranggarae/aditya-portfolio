@@ -201,31 +201,41 @@
       transform: scale(1.05);
     }
 
-    /* Mobile Responsiveness Improvements */
-    @media (max-width: 768px) {
-      section {
-        padding-top: 4rem !important;
-        padding-bottom: 4rem !important;
-      }
-
-      .hero-text {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .hero-text h1 {
-        font-size: 42px !important;
-      }
-
-      .hero-text p {
-        font-size: 16px !important;
-      }
-
-      .hero-text .flex {
-        justify-content: center;
-      }
+        /* Mobile Responsiveness Improvements */
+        @media (max-width: 768px) {
+            section {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+            .hero-text {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-text h1 {
+                font-size: 32px !important;
+                line-height: 1.2 !important;
+            }
+            .hero-text h2 {
+                font-size: 18px !important;
+                line-height: 1.4 !important;
+                text-align: center;
+            }
+            .hero-text p {
+                font-size: 15px !important;
+                text-align: center;
+            }
+            .hero-text .flex {
+                justify-content: center;
+            }
+        }
+        @media (max-width: 640px) {
+            section {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+        }
     }
   </style>
 </head>
@@ -234,7 +244,7 @@
   <nav
     class="bg-surface dark:bg-surface font-body-md text-body-md full-width top-0 sticky border-b border-outline-variant transition-all duration-300 ease-in-out z-50">
     <div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto w-full relative">
-      <a class="font-headline-md text-headline-md font-bold text-refined-gold" href="#">Aditya Pratama Rachim</a>
+      <a class="text-lg md:text-headline-md font-bold text-refined-gold transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis" href="#">Aditya Pratama Rachim</a>
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex space-x-6 items-center">
@@ -259,18 +269,12 @@
     </div>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu"
-      class="hidden md:hidden absolute top-20 left-0 w-full bg-surface-container-high border-b border-outline-variant flex-col py-4 px-gutter shadow-xl">
-      <a class="block py-3 text-refined-gold border-b border-outline-variant mobile-link" href="#about">About</a>
-      <a class="block py-3 text-on-surface-variant hover:text-refined-gold border-b border-outline-variant mobile-link"
-        href="#experience">Experience</a>
-      <a class="block py-3 text-on-surface-variant hover:text-refined-gold border-b border-outline-variant mobile-link"
-        href="#skills">Skills</a>
-      <a class="block py-3 text-on-surface-variant hover:text-refined-gold border-b border-outline-variant mobile-link"
-        href="#achievements">Achievements</a>
-      <a class="block py-3 text-on-surface-variant hover:text-refined-gold border-b border-outline-variant mobile-link"
-        href="#contact">Contact</a>
-
+    <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-surface-container-high border-b border-outline-variant flex-col py-4 px-gutter shadow-xl z-50">
+        <a class="block py-3 text-refined-gold border-b border-outline-variant mobile-link" href="#about">About</a>
+        <a class="block py-3 text-on-surface-variant hover:text-refined-gold border-b border-outline-variant mobile-link" href="#experience">Experience</a>
+        <a class="block py-3 text-on-surface-variant hover:text-refined-gold border-b border-outline-variant mobile-link" href="#skills">Skills</a>
+        <a class="block py-3 text-on-surface-variant hover:text-refined-gold border-b border-outline-variant mobile-link" href="#achievements">Achievements</a>
+        <a class="block py-3 text-on-surface-variant hover:text-refined-gold border-b border-outline-variant mobile-link" href="#contact">Contact</a>
     </div>
   </nav>
   <main class="w-full">
@@ -338,28 +342,28 @@
           <!-- Stats Grid -->
           <div class="lg:col-span-7 grid grid-cols-2 gap-4 md:gap-6">
             <div
-              class="bg-surface-container-high p-card-padding rounded-lg border border-outline-variant flex flex-col items-center justify-center text-center interactive-card">
+              class="bg-surface-container-high p-4 sm:p-6 rounded-lg border border-outline-variant flex flex-col items-center justify-center text-center interactive-card">
               <span class="material-symbols-outlined text-refined-gold mb-3 text-3xl">work</span>
               <span class="font-metric-display text-metric-display text-refined-gold mb-1">3+</span>
               <span class="font-label-md text-label-md text-platinum-gray uppercase tracking-wider text-[10px]">Years
                 Experience</span>
             </div>
             <div
-              class="bg-surface-container-high p-card-padding rounded-lg border border-outline-variant flex flex-col items-center justify-center text-center interactive-card">
+              class="bg-surface-container-high p-4 sm:p-6 rounded-lg border border-outline-variant flex flex-col items-center justify-center text-center interactive-card">
               <span class="material-symbols-outlined text-refined-gold mb-3 text-3xl">school</span>
               <span class="font-metric-display text-metric-display text-refined-gold mb-1">3.56</span>
               <span
                 class="font-label-md text-label-md text-platinum-gray uppercase tracking-wider text-[10px]">GPA</span>
             </div>
             <div
-              class="bg-surface-container-high p-card-padding rounded-lg border border-outline-variant flex flex-col items-center justify-center text-center interactive-card">
+              class="bg-surface-container-high p-4 sm:p-6 rounded-lg border border-outline-variant flex flex-col items-center justify-center text-center interactive-card">
               <span class="material-symbols-outlined text-refined-gold mb-3 text-3xl">trending_up</span>
               <span class="font-metric-display text-metric-display text-refined-gold mb-1">180%</span>
               <span class="font-label-md text-label-md text-platinum-gray uppercase tracking-wider text-[10px]">Sales
                 Growth</span>
             </div>
             <div
-              class="bg-surface-container-high p-card-padding rounded-lg border border-outline-variant flex flex-col items-center justify-center text-center interactive-card">
+              class="bg-surface-container-high p-4 sm:p-6 rounded-lg border border-outline-variant flex flex-col items-center justify-center text-center interactive-card">
               <span class="material-symbols-outlined text-refined-gold mb-3 text-3xl">language</span>
               <span class="font-metric-display text-metric-display text-refined-gold mb-1">540</span>
               <span class="font-label-md text-label-md text-platinum-gray uppercase tracking-wider text-[10px]">TOEFL
@@ -460,13 +464,13 @@
             Academic <span class="text-refined-gold">Background</span>
           </h2>
           <div
-            class="bg-surface-container p-card-padding rounded border border-outline-variant flex items-center justify-between hover:border-refined-gold transition-colors mb-8 interactive-card">
+            class="bg-surface-container p-5 md:p-card-padding rounded border border-outline-variant flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between hover:border-refined-gold transition-colors mb-8 interactive-card">
             <div>
-              <h3 class="font-headline-md text-headline-md text-inverse-surface mb-2 text-xl">Bachelor of Communication
+              <h3 class="font-headline-md text-headline-md text-inverse-surface mb-2 text-lg md:text-xl">Bachelor of Communication
                 Science — Public Relations</h3>
               <p class="font-body-md text-body-md text-platinum-gray">Pakuan University of Bogor</p>
             </div>
-            <div class="text-right pl-4 border-l border-outline-variant">
+            <div class="text-left sm:text-right pl-0 sm:pl-4 border-l-0 sm:border-l border-outline-variant flex sm:flex-col items-baseline sm:items-end gap-2 sm:gap-0">
               <span class="font-metric-display text-metric-display text-refined-gold block text-3xl">3.56</span>
               <span class="font-label-md text-label-md text-platinum-gray text-[10px] uppercase">GPA</span>
             </div>
@@ -581,7 +585,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Card 1 -->
         <div
-          class="bg-surface-container-high p-card-padding rounded-lg border border-outline-variant flex flex-col items-center justify-start glow-hover transition-all pt-12 relative overflow-hidden interactive-card">
+          class="bg-surface-container-high p-6 rounded-lg border border-outline-variant flex flex-col items-center justify-start glow-hover transition-all pt-12 relative overflow-hidden interactive-card">
           <div class="absolute top-0 w-full h-1 bg-refined-gold"></div>
           <span class="material-symbols-outlined text-refined-gold mb-6 text-4xl">trending_up</span>
           <span class="font-metric-display text-metric-display text-refined-gold mb-4 text-[48px]">180%</span>
@@ -591,7 +595,7 @@
         </div>
         <!-- Card 2 -->
         <div
-          class="bg-surface-container-high p-card-padding rounded-lg border border-outline-variant flex flex-col items-center justify-start glow-hover transition-all pt-12 relative overflow-hidden interactive-card">
+          class="bg-surface-container-high p-6 rounded-lg border border-outline-variant flex flex-col items-center justify-start glow-hover transition-all pt-12 relative overflow-hidden interactive-card">
           <div class="absolute top-0 w-full h-1 bg-refined-gold"></div>
           <span class="material-symbols-outlined text-refined-gold mb-6 text-4xl">shield_person</span>
           <span class="font-metric-display text-metric-display text-refined-gold mb-4 text-[48px]">25%<span
@@ -602,7 +606,7 @@
         </div>
         <!-- Card 3 -->
         <div
-          class="bg-surface-container-high p-card-padding rounded-lg border border-outline-variant flex flex-col items-center justify-start glow-hover transition-all pt-12 relative overflow-hidden interactive-card">
+          class="bg-surface-container-high p-6 rounded-lg border border-outline-variant flex flex-col items-center justify-start glow-hover transition-all pt-12 relative overflow-hidden interactive-card">
           <div class="absolute top-0 w-full h-1 bg-refined-gold"></div>
           <span class="material-symbols-outlined text-refined-gold mb-6 text-4xl">workspace_premium</span>
           <span
@@ -665,7 +669,7 @@
           </div>
         </div>
         <!-- Contact -->
-        <div class="bg-surface-container-high p-card-padding rounded-lg border border-outline-variant interactive-card"
+        <div class="bg-surface-container-high p-6 rounded-lg border border-outline-variant interactive-card"
           id="contact">
           <span class="font-label-md text-label-md text-refined-gold uppercase tracking-widest block mb-4">Get in
             Touch</span>
@@ -725,10 +729,17 @@
             </div>
           </div>
           <div class="flex flex-col sm:flex-row gap-4 pt-4 border-t border-outline-variant">
-
+            <a href="mailto:adityapratamarachim98@gmail.com"
+              class="flex-1 inline-flex items-center justify-center bg-refined-gold text-on-primary-container font-label-md text-label-md px-6 py-3 rounded-full hover:bg-surface-tint transition-all duration-300 glow-hover text-center">
+              <span class="material-symbols-outlined mr-2 text-sm">mail</span>
+              Email Me
+            </a>
             <a href="https://wa.me/6285819469088?text=Hello%20Aditya,%20I%20found%20your%20portfolio%20online%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you."
               target="_blank"
-              class="flex-1 inline-flex items-center justify-center bg-success-emerald text-white font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity interactive-pill">
+              class="flex-1 inline-flex items-center justify-center bg-success-emerald text-white font-label-md text-label-md px-6 py-3 rounded-full hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-[0_0_15px_rgba(16,185,129,0.2)] hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] text-center">
+              <svg class="w-5 h-5 mr-2 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.57 1.977 14.1 1.953 12.006 1.953c-5.437 0-9.862 4.371-9.866 9.8.002 2.083.548 4.122 1.587 5.92L2.73 21.27l6.3-1.644c-1.578.862-2.316.526-2.383.528zm10.776-6.84c-.267-.134-1.58-.78-1.822-.867-.243-.088-.419-.133-.596.133-.176.265-.685.864-.839 1.04-.155.178-.308.2-.575.067-.267-.134-1.13-.417-2.152-1.328-.795-.71-1.332-1.588-1.488-1.854-.156-.265-.017-.409.117-.542.121-.12.267-.31.401-.466.134-.155.178-.266.267-.442.089-.178.045-.332-.022-.466-.067-.134-.596-1.439-.817-1.97-.215-.518-.432-.447-.596-.456-.153-.008-.33-.01-.507-.01-.177 0-.464.067-.707.332-.243.265-.928.907-.928 2.21 0 1.302.947 2.56 1.08 2.737.133.177 1.86 2.84 4.505 3.98.63.27 1.12.43 1.503.55.632.2 1.208.172 1.662.105.508-.075 1.58-.646 1.802-1.238.22-.593.22-1.102.155-1.21-.067-.107-.243-.174-.51-.307z"/>
+              </svg>
               Chat on WhatsApp
             </a>
           </div>
